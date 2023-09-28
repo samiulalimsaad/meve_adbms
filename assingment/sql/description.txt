@@ -1,0 +1,29 @@
+1. BloodDonation: Records information about blood donations, including donor details, blood type, and test results.
+
+2. BloodTestingAndScreening: Stores data related to blood testing and screening, including test results and screening details.
+
+3. FeedbackAndSurvey: Contains feedback and survey responses from both recipients and donors, along with improvement suggestions.
+
+4. BloodDonationEvent: Represents events related to blood donation, such as event names, dates, and locations.
+
+5. ReportsAndAnalytics: Stores various reports and analytics data, including donation reports, inventory reports, and statistics.
+
+6. EmergencyRequests: Records emergency requests for blood, including urgency level and delivery instructions.
+
+7. DonorRecognitionAndRewards: Manages donor recognition, awards, and reward points.
+
+8. Donor: Contains donor information, such as personal details, contact information, and donation history.
+
+9. Location: Stores information about locations, including addresses, coordinates, and contact details.
+
+10. ContactInformation: Manages contact information, including email addresses and phone numbers.
+
+11. Recipient: Stores recipient details, including medical history, prescriptions, and emergency contacts.
+
+12. SupportAndHelpCenter: Contains resources such as FAQs, user guides, and contact support information.
+
+13. StaffAndUserManagementProps: Manages staff and user information, including roles, contact details, and activity logs.
+
+14. ActivityLog: Records activity logs with timestamps, user IDs, actions, and descriptions.
+
+These descriptions provide a brief overview of the purpose of each table in database schema.

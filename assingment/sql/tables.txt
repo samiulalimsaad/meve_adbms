@@ -1,0 +1,27 @@
+BloodDonation (blood_id, blood_bag_id_or_barcode, blood_type, donation_date, expiration_date, storage_location, quantity, blood_group, rh_factor, test_results, donor_id, recipient_id, blood_event_id, feedback)
+
+BloodTestingAndScreening (blood_test_id, test_results, screening_date, testing_laboratory_information, report)
+
+FeedbackAndSurvey (feedback_id, recipient_feedback, survey_responses, improvement_suggestions, donor_feedback)
+
+BloodDonationEvent (event_id, event_name, event_date_and_time, location, organizer_information, donor_registration, donation_statistics)
+
+ReportsAndAnalytics (report_id, donation_reports, inventory_reports, donor_recipient_statistics, blood_type_distribution)
+
+EmergencyRequests (emergency_id, urgency_level, requesting_hospital_information, blood_type, quantity_needed, delivery_instructions, donor)
+
+DonorRecognitionAndRewards (donor_id, donor_awards_and_recognition, points_or_reward_system)
+
+Donor (donor_id, name, date_of_birth, blood_type, weight, gender, id_card_number, last_donation_date, contact_information, address)
+
+Location (location_id, name, address, city, state, postal_code, country, latitude, longitude, description, contact_number)
+
+ContactInformation (contact_id, email, phone_number)
+
+Recipient (recipient_id, name, date_of_birth, blood_type, medical_history, doctors_prescription, hospital_information, emergency_contact, contact_information, address)
+
+SupportAndHelpCenter (support_id, faqs, user_guides, contact_support)
+
+StaffAndUserManagementProps (user_id, staff_username, role_permissions, contact_information, login_credentials, activity_logs)
+
+ActivityLog (log_id, timestamp, user_id, action, description)
