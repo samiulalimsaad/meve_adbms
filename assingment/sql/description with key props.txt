@@ -1,0 +1,101 @@
+Certainly! Here are detailed descriptions for the key properties of each table:
+
+1. BloodDonation:
+    blood_id: Unique identifier for each blood donation record.
+    donation_date: Date when the blood was donated.
+    blood_type: The blood type of the donated blood.
+    quantity: The quantity of blood donated.
+    donor_id: Reference to the donor who made the donation.
+    recipient_id: Reference to the recipient who received the blood.
+
+2. BloodTestingAndScreening:
+    blood_test_id: Unique identifier for each blood testing and screening record.
+    test_results: Results of the blood tests.
+    screening_date: Date when the screening took place.
+    report: Reference to the associated report.
+
+3. FeedbackAndSurvey:
+    feedback_id: Unique identifier for each feedback and survey record.
+    recipient_feedback: Feedback provided by recipients.
+    survey_responses: Responses to surveys.
+    improvement_suggestions (optional): Suggestions for improvement.
+    donor_feedback: Feedback provided by donors.
+
+4. BloodDonationEvent:
+    event_id: Unique identifier for each blood donation event.
+    eventname: Name of the event.
+    event_date_and_time: Date and time of the event.
+    location: Reference to the location where the event took place.
+
+5. ReportsAndAnalytics:
+    report_id: Unique identifier for each report and analytics record.
+    donation_reports: Reports related to blood donations.
+    inventory_reports: Reports related to inventory.
+    donor_recipient_statistics: Statistics on donors and recipients.
+    blood_type_distribution: Distribution of blood types.
+
+6. EmergencyRequests:
+    emergency_id: Unique identifier for each emergency request.
+    urgency_level: The level of urgency for the request.
+    requesting_hospital_information: Information about the hospital making the request.
+    blood_type: The blood type requested.
+    quantity_needed: The quantity of blood needed.
+    delivery_instructions: Instructions for blood delivery.
+    donor: Reference to the donor fulfilling the request.
+
+7. DonorRecognitionAndRewards:
+    donor_id: Unique identifier for each donor.
+    donor_awards_and_recognition: Information about awards and recognition received by the donor.
+    points_or_reward_system: Details about the donor's points or rewards.
+
+8. Donor:
+    donor_id: Unique identifier for each donor.
+    name: Name of the donor.
+    date_of_birth: Date of birth of the donor.
+    blood_type: Blood type of the donor.
+    weight: Weight of the donor.
+    last_donation_date: Date of the donor's last donation.
+
+9. Location:
+    location_id: Unique identifier for each location.
+    name: Name of the location.
+    address: Address of the location.
+    city: City where the location is situated.
+    state: State where the location is situated.
+    country: Country where the location is situated.
+
+10. ContactInformation:
+     contact_id: Unique identifier for each contact information record.
+     email: Email address.
+     phone_number: Phone number.
+
+11. Recipient:
+     recipient_id: Unique identifier for each recipient.
+     name: Name of the recipient.
+     date_of_birth: Date of birth of the recipient.
+     blood_type: Blood type of the recipient.
+     medical_history: Medical history of the recipient.
+     doctors_prescription: Prescription from the doctor.
+     hospital_information: Information about the hospital where the recipient is treated.
+     emergency_contact: Emergency contact information.
+
+12. SupportAndHelpCenter:
+     support_id: Unique identifier for each support and help center record.
+     faqs: Frequently Asked Questions (FAQs).
+     user_guides: User guides.
+     contact_support: Contact information for support.
+
+13. StaffAndUserManagementProps:
+     user_id: Unique identifier for each user.
+     staff_username: Username for staff members.
+     role_permissions: Permissions and roles.
+     activity_logs: Reference to activity logs.
+
+14. ActivityLog:
+     log_id: Unique identifier for each activity log entry.
+     timestamp: Timestamp when the activity occurred.
+     user_id: Reference to the user responsible for the activity.
+     action: Description of the action or event.
+     description: Additional details or description of the activity.
+
+These detailed property descriptions provide a comprehensive understanding of the purpose and content of each key property within the tables.
