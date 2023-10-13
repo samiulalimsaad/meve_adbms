@@ -7,7 +7,7 @@ or replace trigger no_update before
 update on meve_user_trigger_2909 for each row begin if (
     TO_CHAR (sysdate, 'Dy') = 'Fri'
     and (
-        TO_CHAR (sysdate, 'HH24') between '17:30' and '18:30'
+        TO_CHAR (sysdate, 'HH24:MI') between '17:30' and '18:30'
     )
 ) then raise_application_error (-20000, 'Can not perform DML Operation');
 
@@ -16,24 +16,26 @@ end if;
 end;
 
 -- 
-update meve_account_2209
+update meve_user_trigger_2909
 set
     email = 'aaa@gmail.com'
-from
-    meve_user_trigger_2909
 where
     email = 'john.doe@example.com'
     -- Inserting a single row into the table
 INSERT INTO
-    meve_user_trigger_2909 (name, email)
+    meve_user_trigger_2909
 VALUES
     ('John Doe', 'john.doe@example.com');
 
 INSERT INTO
-    meve_user_trigger_2909 (name, email)
+    meve_user_trigger_2909
 VALUES
     ('Alice Smith', 'alice.smith@example.com')
 INSERT INTO
-    meve_user_trigger_2909 (name, email) ('Bob Johnson', 'bob.johnson@example.com')
+    meve_user_trigger_2909
+VALUES
+    ('Bob Johnson', 'bob.johnson@example.com')
 INSERT INTO
-    meve_user_trigger_2909 (name, email) ('Eve Anderson', 'eve.anderson@example.com');
+    meve_user_trigger_2909
+VALUES
+    ('Eve Anderson', 'eve.anderson@example.com');
